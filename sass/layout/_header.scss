@@ -1,0 +1,37 @@
+// .header {
+// 	height: 95vh;
+// 	background-image: linear-gradient(to right bottom , #55c57ab1, #7ed56fcc), url(("../img/header.jpg"));
+// 	background-size: cover;
+// 	background-position: center;
+
+// 	animation: moveInBottomClipPath 1s ease-out;
+// 	animation-fill-mode: forwards;     
+// 	position: relative;
+
+// 	&__logo-box {
+// 		position: absolute;
+// 		top: 4rem;
+// 		left: 4rem;
+// 	}
+
+// 	&__logo {
+// 		height: 3.5rem;
+// 		cursor: pointer;
+// 		&:hover {
+// 			animation: rotateAround 1s ease-in;
+// 		}
+// 	}
+
+// 	&__text-box {
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+	
+// 		transform: translate(-50%, -50%);
+// 		text-align: center;
+// 	}
+	
+// }
+
+
+

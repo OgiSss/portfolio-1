@@ -1,0 +1,42 @@
+.section-navigation {
+	width: 9rem;
+	background-color: var(--color-primary);
+	position: relative;
+	min-height: 100vh;
+	border-left: 2rem solid var(--color-primary);
+	transition: 0.5s;
+	overflow: hidden;
+
+	&.active {
+		width: 30rem;
+	}
+}
+
+.section-main {
+	width: 100%;
+}
+
+.section-topbar {
+	height: 6rem;
+	box-shadow: 0.5rem 0.5rem 1rem var(--box-shadow-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3rem;
+}
+
+.section-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+	margin-top: 3rem;
+	padding: 3rem;
+
+	@include respond(tab-land) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include respond(phone) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
