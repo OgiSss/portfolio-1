@@ -10,10 +10,8 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="css/icon-font.css" />
-
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+		<!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
 
 		<title>Login page</title>
 	</head>
@@ -21,6 +19,9 @@
 	<body>
 		<div class="container">
 			<nav class="section-navigation active">
+				<!-- <span class="section-navigation__icon-close"
+					><ion-icon name="close-outline"></ion-icon
+				></span> -->
 				<ul class="navigation">
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
@@ -97,7 +98,7 @@
 			</nav>
 
 			<main class="section-main">
-				<div class="section-topbar">
+				<section class="section-topbar">
 					<div class="toggle">
 						<ion-icon name="menu-outline"></ion-icon>
 					</div>
@@ -114,11 +115,11 @@
 					</div>
 
 					<div class="user">
-						<img class="user__image" src="/img/avatar.svg" />
+						<img class="user__image" src="./img/avatar-6.jpg" />
 					</div>
-				</div>
+				</section>
 
-				<div class="section-cards">
+				<section class="section-cards">
 					<div class="card">
 						<div class="card__content">
 							<div class="card__numbers">1.504</div>
@@ -150,7 +151,159 @@
 						</div>
 						<ion-icon class="card__icon" name="cash-outline"></ion-icon>
 					</div>
-				</div>
+				</section>
+
+				<section class="section-details">
+					<div class="recent-orders">
+						<div class="recent-orders__header">
+							<h2 class="recent-orders__title">Recent Orders</h2>
+							<a class="btn" href="#">View All</a>
+						</div>
+
+						<table class="table">
+							<thead>
+								<tr class="table__row">
+									<td class="table__header">Name</td>
+									<td class="table__header">Price</td>
+									<td class="table__header">Payment</td>
+									<td class="table__header">Status</td>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr class="table__row">
+									<td class="table__content">Window Coolers</td>
+									<td class="table__content">$110</td>
+									<td class="table__content">Due</td>
+									<td class="table__content">
+										<span class="table__status table__status--pending"
+											>Pending</span
+										>
+									</td>
+								</tr>
+
+								<tr class="table__row">
+									<td class="table__content">Speakrs</td>
+									<td class="table__content">$620</td>
+									<td class="table__content">Paid</td>
+									<td class="table__content">
+										<span class="table__status table__status--return"
+											>Return</span
+										>
+									</td>
+								</tr>
+
+								<tr class="table__row">
+									<td class="table__content">Hp Laptop</td>
+									<td class="table__content">$110</td>
+									<td class="table__content">Due</td>
+									<td class="table__content">
+										<span class="table__status table__status--inprogress"
+											>In Progress</span
+										>
+									</td>
+								</tr>
+
+								<tr class="table__row">
+									<td class="table__content">Star Ref</td>
+									<td class="table__content">$110</td>
+									<td class="table__content">Paid</td>
+									<td class="table__content">
+										<span class="table__status table__status--delivered"
+											>Delivered</span
+										>
+									</td>
+								</tr>
+
+								<tr class="table__row">
+									<td class="table__content">Adidas Shoes</td>
+									<td class="table__content">$620</td>
+									<td class="table__content">Paid</td>
+									<td class="table__content">
+										<span class="table__status table__status--return"
+											>Return</span
+										>
+									</td>
+								</tr>
+
+								<tr class="table__row">
+									<td class="table__content">Denim Shirts</td>
+									<td class="table__content">$130</td>
+									<td class="table__content">Paid</td>
+									<td class="table__content">
+										<span class="table__status table__status--pending"
+											>Pending</span
+										>
+									</td>
+								</tr>
+
+								<tr class="table__row">
+									<td class="table__content">Adidas Shoes</td>
+									<td class="table__content">$620</td>
+									<td class="table__content">Paid</td>
+									<td class="table__content">
+										<span class="table__status table__status--return"
+											>Return</span
+										>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="recent-customers">
+						<div class="recent-customers__header">
+							<h2 class="recent-customers__title">Recent Orders</h2>
+							<a class="btn" href="#">View All</a>
+						</div>
+
+						<div class="recent-customers__users">
+							<div class="recent-customers__user">
+								<img class="recent-customers__image" src="./img/avatar-4.jpg" />
+
+								<div class="recent-customers__text">
+									<div class="recent-customers__name">Adrian</div>
+									<div class="recent-customers__country">Germany</div>
+								</div>
+							</div>
+
+							<div class="recent-customers__user">
+								<img class="recent-customers__image" src="./img/avatar-2.jpg" />
+
+								<div class="recent-customers__text">
+									<div class="recent-customers__name">Oskar</div>
+									<div class="recent-customers__country">Poland</div>
+								</div>
+							</div>
+
+							<div class="recent-customers__user">
+								<img class="recent-customers__image" src="./img/avatar-3.jpg" />
+
+								<div class="recent-customers__text">
+									<div class="recent-customers__name">Maciej</div>
+									<div class="recent-customers__country">USA</div>
+								</div>
+							</div>
+
+							<div class="recent-customers__user">
+								<img class="recent-customers__image" src="./img/avatar-1.jpg" />
+
+								<div class="recent-customers__text">
+									<div class="recent-customers__name">Natalie</div>
+									<div class="recent-customers__country">UK</div>
+								</div>
+							</div>
+
+							<div class="recent-customers__user">
+								<img class="recent-customers__image" src="./img/avatar-5.jpg" />
+
+								<div class="recent-customers__text">
+									<div class="recent-customers__name">Elisabeth</div>
+									<div class="recent-customers__country">France</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 		</div>
 	</body>
@@ -159,8 +312,18 @@
 		const toggleElement = document.querySelector('.toggle');
 
 		toggleElement.addEventListener('click', toggle);
+		document.addEventListener('click', function (e) {
+			const navigation = document.querySelector('.section-navigation');
 
-		function toggle() {
+			const isChildrenOfNavigation =
+				navigation !== e.target && navigation.contains(e.target);
+			if (!isChildrenOfNavigation && navigation.classList.contains('active')) {
+				navigation.classList.remove('active');
+			}
+		});
+
+		function toggle(e) {
+			e.stopPropagation();
 			const navigation = document.querySelector('.section-navigation');
 
 			if (navigation.classList.contains('active')) {

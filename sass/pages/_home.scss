@@ -9,6 +9,33 @@
 
 	&.active {
 		width: 30rem;
+
+		@include respond(phone) {
+			border-left: 2rem solid var(--color-primary);
+			position: fixed;
+			z-index: 100;
+		}
+
+		.section-navigation__icon-close {
+			display: block;
+		}
+	}
+
+	@include respond(phone) {
+		border-left: none;
+	}
+
+	&__icon-close {
+		display: none;
+		position: absolute;
+		right: 1rem;
+		top: 0.5rem;
+		height: 3rem;
+		width: 3rem;
+		font-size: 2.8rem;
+		z-index: 1000;
+		color: var(--color-white);
+		transition: display 1s 2s;
 	}
 }
 
@@ -38,5 +65,16 @@
 
 	@include respond(phone) {
 		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.section-details {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 3rem;
+	padding: 3rem;
+
+	@include respond(tab-land) {
+		grid-template-columns: 1fr;
 	}
 }

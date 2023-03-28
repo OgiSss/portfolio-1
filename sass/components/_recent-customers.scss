@@ -1,0 +1,49 @@
+.recent-customers {
+	padding: 2rem;
+	width: 100%;
+	box-shadow: 1rem 1rem 2.5rem var(--box-shadow-color);
+	border-radius: 2rem;
+
+	&__header {
+		background: var(--color-white);
+		padding-bottom: 2rem;
+		display: flex;
+		justify-content: space-between;
+		font-weight: bold;
+	}
+
+	&__title {
+		color: var(--color-primary);
+		font-weight: bold;
+	}
+
+	&__users {
+		display: grid;
+		gap: 2rem;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		line-height: 1.4;
+	}
+
+	&__image {
+		height: 6rem;
+		border-radius: 6rem;
+	}
+
+	&__name {
+		font-weight: bold;
+		font-size: 1.8rem;
+	}
+
+	&__country {
+		color: var(--color-grey-dark-2);
+		font-size: 1.4rem;
+	}
+
+	&__text {
+		margin-left: 2rem;
+	}
+}
